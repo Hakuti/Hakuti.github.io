@@ -1,0 +1,14 @@
+/* #mainDiv {
+    /* visibility: visible;
+    visibility: hidden; 
+}*/
+#firstDiv h1{
+    float: left;
+    padding: 10px;
+}
+
+#guessedLetters  p{
+    float: left;
+    padding: 10px;
+    left: 10px;
+}
