@@ -1,3 +1,6 @@
+
+//An array of Objects for different characters and their properties
+
 var characters = [{
         character: "Andrew",
         health: 100,
@@ -52,11 +55,6 @@ var characters = [{
 var hasOpponent = false;
 var allOpponentsDefeated = false;
 var opponentsDefeated = 0;
-var options = {
-    to: {
-        height: 100
-    }
-};
 //Assigned randomly
 var hero = characters[Math.floor(Math.random() * characters.length)];
 // console.log(hero);
@@ -79,28 +77,31 @@ $(document).ready(function () {
 
     // $("#" + heroIndex).remove();
 
-
+    //Add randomly assigned hero to hero div and h1
     $("#hero-img").html("<img src=" + hero.src + " style='width: 64px; height: 64px;'>");
     $("#Hero-Health").text("Health: " + hero.health);
     $("#Hero-Attack").text("Attack: " + hero.counterAttack);
-
     $("#fight-button").on("click", function () {
 
+        //flag to check if one is currently fighting an opponent
         if (hasOpponent == true) {
-            console.log(hasOpponent + " apply fight");
+            
+            //adjusting battle properties
             hero.health = hero.health - villan.counterAttack;
             villan.health = villan.health - hero.Attack
             $("#Enemy-Health").text("Health: " + villan.health);
             $("#Hero-Health").text("Health: " + hero.health);
             $("#Hero-Attack").text("Attack: " + hero.Attack);
-            // $("#hero-img").effect().shake();
             hero.Attack = hero.Attack + 6;
-            console.log(villan.health);
+            
+            //animation to shake the div
             $("#hero-img").effect("shake");
             $("#enemy-img").effect("shake");
+
+            //reset the properties of the enemy for the battle
             if (villan.health <= 0) {
-                //remove from fight and from dom
-                console.log("Here");
+                
+                
                 $("#Enemy-Health").text("");
                 $("#Enemy-Attack").text("");
                 $("enemy-img").attr('src', '""');
@@ -109,66 +110,40 @@ $(document).ready(function () {
                 if (opponentsDefeated == 5) {
                     wins++;
                 }
-                console.log(hasOpponent);
-                console.log(hero.health + "In villan");
+                
 
             }
+            //Once the hero's health is zero or less reset the game
             if (hero.health <= 0) {
                 //gameOver
                 //resetGame
                 losses++;
-                console.log(hero.health)
+                
                 resetGame();
 
 
-                console.log("game over");
+               
             }
 
         } else {
-            console.log("does not have Opponent do nothing");
+            
         }
     });
 
-    //     <div class="col-2 Anakin" id="0">
-    //     <img class="mr-3" src="assets/overwatch.png" style="height:64px; width: 64px;">
-    // </div>
-
-    ///*[@id="0"]
 
 
-
-
-    {
-        /* <div class="col-2 Anakin" id="0">
-        <img class="mr-3" src="assets/overwatch.png" style="width: 64px; height: 64px;">
-        </div> */
-    }
-    ////*[@id="5"]
     $("#fighters-left").on("click", ".col-2", function () {
 
-        // $(this).effect("shake");
 
-
-
+        //Do nothing, to be remodified.
         if (hasOpponent == true) {
-
-            // villan = characters[$(this).attr('id')];
-
-            // console.log(villan);
-            //Do not add to DOM
-            //Do nothing
-            console.log("Has opponent");
-            console.log($(this));
-            console.log($(this).attr('id'));
-
 
 
         } else {
             ///Add to Enemy Jumbo
-            console.log("Does not have opponent");
-            console.log($(this).attr('id'));
+            
             villan = characters[$(this).attr('id')];
-            console.log(villan);
+            
             $("#enemy-img").html("<img src=" + villan.src + " style='width: 64px; height: 64px;'>");
             $("#Enemy-Health").text("Health: " + villan.health);
             $("#Enemy-Attack").text("Attack: " + villan.counterAttack);
@@ -178,21 +153,29 @@ $(document).ready(function () {
         }
     })
 
+    //Reset elements
     function resetGame() {
+        //reset the flag no opponent being fought
         hasOpponent = false;
+        //empty the columns inside fighters-left
         $(".col-2").parent().empty();
-        console.log(characters.length)
+        
+        //readd the columns with the appropriate content
         for (var i = 0; i < characters.length; i++) {
             $("#fighters-left").append("<div class='col-2 " + characters[i].character + "'id=" + i + "></div>");
             $("#" + i).append("<img class='mr-3' src=" + characters[i].src + " style='width: 64px; height: 64px;'>")
             console.log(i);
         }
 
+        //Reset the hero health and attack
         $("#Hero-Health").text("");
         $("#Hero-Attack").text("");
+
+        //Reset the enemy health and attack
         $("#Enemy-Health").text("");
         $("#Enemy-Attack").text("");
 
+        //Reset properties back to original status
         characters = [{
                 character: "Andrew",
                 health: 100,
@@ -244,14 +227,19 @@ $(document).ready(function () {
 
         ];
 
+        //select a new random hero
         hero = characters[Math.floor(Math.random() * characters.length)];
-        console.log("Reset game hero" + hero);
+        
+        //reset enemies defeated to 0
         opponentsDefeated = 0;
 
+        //reset flag
         allOpponentsDefeated = false;
+
+        //Readd the properties of hero's health and attack
         $("#hero-img").html("<img src=" + hero.src + " style='width: 64px; height: 64px;'>");
         $("#Hero-Health").text("Health: " + hero.health);
-        $("#Hero-Attack").text("Attack: " + hero.counterAttack);
+        $("#Hero-Attack").text("Attack: " + hero.Attack);
         $("#wins").text("Wins: " + wins);
         $("#losses").text("Losses: " + losses);
     }
