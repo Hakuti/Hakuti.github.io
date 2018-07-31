@@ -1,0 +1,14 @@
+.col-4 p{
+    position: relative;
+    left: 25%;
+    font-weight: 700;
+    color: #dc3545!important
+}
+.col-4 {
+    margin-top: 20px;
+}
+
+.border {
+    border-width: 3px !important;
+    border-color: #dc3545!important;
+}

@@ -1,20 +1,20 @@
-# JQuery Assignment
+# Giphy Assignment
 
 ### Overview
 
-![alt text](assets/OverwatchGame.png)
+![alt text](assets/giphy.png)
 
-In this assignment, I have created a game where a player is assigned a random hero, and then chooses an enemy to fight. 
+In this assignment, I have created an input that generates a new button and add it's to the gif buttons. You can then click on the buttons to generate gif images.
 
 A player may fight itself as one of the villains. 
 
-### Winning 
+### Generates Gifs
 
-* In order to win you must beat all five opponents.
+*The gifs are contained in a rounded border
 
-### Losing
+### Clicking Gifs
 
-*You lose by being depleted of your health points.
+*Click the gifs to change them from still to animated and vice versa.
 
 **Good Luck!**
 # Hakuti.github.io
