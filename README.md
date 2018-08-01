@@ -1,20 +1,20 @@
-# Giphy Assignment
+# Trivia Game Assignment
 
 ### Overview
 
-![alt text](assets/giphy.png)
+![alt text](assets/TriviaGame.png)
 
-In this assignment, I have created an input that generates a new button and add it's to the gif buttons. You can then click on the buttons to generate gif images.
+In this assignment, a person has 10 seconds to answer each trivia question. 
 
-A player may fight itself as one of the villains. 
+A player will be displayed an image of either correct or incorrect depending on the answer.
 
-### Generates Gifs
+### 10 seconds to answer each question
 
-*The gifs are contained in a rounded border
 
-### Clicking Gifs
+### Restarting game
 
-*Click the gifs to change them from still to animated and vice versa.
+*Click the start game button at the end to restart the game*
 
 **Good Luck!**
 # Hakuti.github.io
+

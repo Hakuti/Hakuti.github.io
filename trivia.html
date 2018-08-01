@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style5.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Jean Canales</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="about.html#">About </a>
+                <a class="nav-item nav-link" href="secondPage.html#">Portfolio
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-item nav-link" href="thirdPage.html#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    </br>
+    <div class="container">
+        <div id="outerDiv">
+            <button class="start-game btn-lg radius bg-danger">Start Game</button>
+            <div id="show-number">
+                <p></p>
+            </div>
+            <!-- <div class="row"> -->
+
+            <!-- </div> -->
+            <div class="row">
+                <div class="col-12">
+                    <p id="question"></p>
+                </div>
+
+                <div class="col-12">
+                    <div id="questions">
+                        <!-- <p id="question"></p> -->
+                        <p id="p0" class="p"></p>
+                        <p id="p1" class="p"></p>
+                        <p id="p2" class="p"></p>
+                        <p id="p3" class="p"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="wrong"></div>
+            </div>
+            <div id="win-loss-div" class="col-12">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/trivia.js"></script>
+</body>
+
+</html>

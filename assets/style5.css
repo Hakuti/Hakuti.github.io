@@ -1,0 +1,41 @@
+.start-game{
+    position: absolute;
+   
+    top:50%;
+    right: 45%;
+   
+    z-index: 99;
+    color: white;
+    
+}
+
+
+
+
+#questions .p {
+    text-align: center;
+}
+
+#question {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#show-number p {
+    font-size: 30px;
+}
+
+#wrong p {
+    text-align: center;
+}
+#wrong img {
+    position: relative;
+    left: 45.5%;
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    background-image: url("background.jpg");
+}
