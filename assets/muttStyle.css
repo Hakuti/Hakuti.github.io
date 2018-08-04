@@ -6,8 +6,12 @@ img {
  .container {
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    
 } 
+
+body {
+    overflow: hidden;
+}
 
 /* no circle */
 .flickity-button {
