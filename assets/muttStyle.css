@@ -1,6 +1,6 @@
 img {
-    width:90%;
-    height:90%;
+    width:100%;
+    height:100%;
 }
 
  .container {
@@ -59,16 +59,14 @@ img {
   }
 
   @media only screen and (max-width: 600px) {
-    img {
-        width:120%;
-        height:80%;
-    }
+
 
     .carousel {
         width: 120%;
     }
 
     .carousel-cell {
+
         width: 120%;
         height: 800px;
         margin-right: 10px;
