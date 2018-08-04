@@ -6,6 +6,7 @@ img {
  .container {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 } 
 
 /* no circle */
@@ -91,9 +92,7 @@ img {
         overflow-y: scroll;
         }
 
-         body.noScroll{
-             overflow: hidden;
-         }
+         
 
        
         
