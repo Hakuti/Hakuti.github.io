@@ -60,7 +60,7 @@ img {
 
   @media only screen and (max-width: 600px) {
     img {
-        width:100%;
+        width:120%;
         height:80%;
     }
 
