@@ -141,6 +141,8 @@ $(document).ready(function() {
         // var myElement = document.getElementById(‘myCarousel’);
         // var mc = new Hammer(myElement);
         
-        
+    $("#dog").on("click", function(){
+        $(this).attr("src", "assets/dog2.jpeg");
+    });      
 
 }); 
