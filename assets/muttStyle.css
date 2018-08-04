@@ -1,0 +1,61 @@
+img {
+    width:386px;
+    height:800px;
+}
+
+ .container {
+    display: flex;
+    justify-content: center;
+} 
+
+/* no circle */
+.flickity-button {
+    background: transparent;
+  }
+.carousel {
+    width: 50%;
+}
+.carousel-cell {
+    width: 83%;
+    height: 800px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+
+  }
+
+ .carousel-cell.is-selected {
+     background: #ED2;
+     z-index: 999;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+  
+  /* cell number */
+  /* .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  } */
+
+  .innerDiv {
+      height: 25%;
+      width: 50%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+     
+  }
+
+  #i-icon{
+    height:5%;
+    width: 10%;
+    position: absolute;
+    bottom: 50;
+    right:30;
+  }
+
+  
