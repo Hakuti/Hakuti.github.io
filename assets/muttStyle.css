@@ -82,13 +82,11 @@ img {
       .modal-body {
         position: relative;
         padding: 20px;
-        height: 200px;
+        /* height: 200px; */
         overflow-y: scroll;
         }
 
-        .modal {
-            height: 80%;
-        }
+       
         
 
   } 
