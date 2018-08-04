@@ -79,4 +79,12 @@ img {
     
       }
 
+      .modal-body {
+        position: relative;
+        padding: 20px;
+        height: 200px;
+        overflow-y: scroll;
+        }
+        
+
   } 
