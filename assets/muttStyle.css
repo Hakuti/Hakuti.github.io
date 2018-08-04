@@ -71,7 +71,7 @@ img {
     .carousel-cell {
 
         width: 120%;
-        height: 800px;
+        height: 100%;
         margin-right: 10px;
         background: #8C8;
         border-radius: 5px;
