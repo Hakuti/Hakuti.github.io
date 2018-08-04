@@ -142,7 +142,7 @@ $(document).ready(function() {
         // var mc = new Hammer(myElement);
         
     $("#dog").on("click", function(){
-        $(this).attr("src", "assets/dog2.jpeg");
+        $(this).attr("src", "assets/Dog2.jpeg");
     });      
 
 }); 
