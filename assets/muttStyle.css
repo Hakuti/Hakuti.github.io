@@ -85,6 +85,10 @@ img {
         height: 200px;
         overflow-y: scroll;
         }
+
+        .modal {
+            height: 80%;
+        }
         
 
   } 
