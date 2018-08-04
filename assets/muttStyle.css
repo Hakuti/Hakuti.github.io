@@ -59,6 +59,10 @@ img {
   }
 
   @media only screen and (max-width: 600px) {
+    img {
+        width:80%;
+        height:80%;
+    }
 
     .carousel {
         width: 120%;
