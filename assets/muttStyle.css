@@ -79,12 +79,21 @@ img {
     
       }
 
+      .flickity-button {
+       
+        background: transparent;
+      }
+
       .modal-body {
         position: relative;
         padding: 20px;
         /* height: 200px; */
         overflow-y: scroll;
         }
+
+         body.noScroll{
+             overflow: hidden;
+         }
 
        
         
