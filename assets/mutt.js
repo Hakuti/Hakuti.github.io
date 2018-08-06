@@ -244,7 +244,7 @@ $('.carousel').on( 'settle.flickity', function( event, index ) {
     //if is selected expand
     //otherwise not-expand class
 
-    
+
     //$(".carousel-cell").addClass('active');
     // console.log($(this).siblings());
     // $('.carousel-cell').toggleClass('not-expand');
