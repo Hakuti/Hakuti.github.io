@@ -1,5 +1,5 @@
 img {
-    width:95%;
+    width:100%;
     height:100%;
 }
 
@@ -9,32 +9,49 @@ img {
     
 } 
 
-body {
+/* body {
     overflow: hidden;
-}
+} */
 
 /* no circle */
 .flickity-button {
     background: transparent;
   }
 .carousel {
-    width: 50%;
+    width: 80%;
 }
 .carousel-cell {
-    width: 83%;
-    height: 800px;
+    width: 43%;
+    height: 80%;
     margin-right: 10px;
     background: #8C8;
     border-radius: 5px;
     counter-increment: gallery-cell;
+    margin-right: 20px;
+    
 
   }
 
+  .carousel-cell.is-expanded { height: 100%;
+
+}
+
+.carousel-cell.not-expand{
+    height: 43%;
+}
+
  .carousel-cell.is-selected {
-     background: #ED2;
-     z-index: 999;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
+    
+     /* background: #ED2; */
+     z-index: 99;
+     /* box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* height: 100%; */
+
+    /* left: 0 !important;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+   */
+    }
   
   /* cell number */
   /* .carousel-cell:before {
@@ -66,6 +83,10 @@ body {
   .modal_content {
       width: auto;
   }
+
+  .flickity-button-icon {
+      background: transparent;
+  }
   @media (max-width: 767.98px) {
 
 
@@ -86,7 +107,7 @@ body {
 
       .flickity-button {
        
-        background: transparent;
+        background:transparent;
       }
 
       .modal-body {
@@ -96,6 +117,13 @@ body {
         overflow-y: scroll;
         }
 
+        #i-icon{
+            height:8%;
+            width: 10%;
+            position: absolute;
+            bottom: 50;
+            right:80;
+          }
          
 
        

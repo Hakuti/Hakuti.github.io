@@ -1,5 +1,7 @@
 $(document).ready(function() { 
     
+
+
     // var myElement = document.getElementById('myCarousel');
     // var mc = new Hammer(myElement);
     
@@ -141,8 +143,143 @@ $(document).ready(function() {
         // var myElement = document.getElementById(‘myCarousel’);
         // var mc = new Hammer(myElement);
         
-    $("#dog").on("click", function(){
-        $(this).attr("src", "assets/Dog2.jpeg");
-    });      
+    // $("#dog").on("click", function(){
+    //     $(this).attr("src", "assets/Dog2.jpeg");
+    // });      
 
+    //  var flkty = new Flickity('.carousel-cell');
+
+    // flkty.on( 'staticClick', function( event, pointer) {
+    //   if ( !cellElement ) {
+    //     return;
+    //   }
+    //   flkty.classList.toggle('is-expanded');
+    //   flkty.reposition();
+    // });
+    // var array = [5, 6, 7, 8, 9];
+    //  var petUrl = "http://api.petfinder.com/pet.find";
+    //  var petApiKey = "aaf7ea34460505b8e7841f0512aae7a4"
+    // $.ajax({
+    //     url: petUrl,
+    //         jsonp: "callback",
+    //         dataType: "jsonp",
+    //         data: {
+    //             key: petApiKey,
+    //             animal: "dog",
+    //             "location": "32812",
+    //             output: "basic",
+    //             format: "json"
+    //         }
+    // }).then(response => {
+    //     array.push(11, 12, 13);
+    //     return array;
+    // }).then(value => {
+    //     console.log(value);
+    // })
+    // $('.button-group').on( 'click', '.button', function() {
+    //     var index = $(this).index();
+    //     $('.carousel').flickity( 'select', index );
+    //   });
+// $("carousel-cell ").on("move", function (){
+//     var index = $(this).index();
+//     $(this).toggleClass('is-expanded');
+// })
+
+
+// $('.carousel').flickity().on( 'dragEnd.flickity', function() {
+//     $('.is-selected').toggleClass('is-expanded');
+//   });
+
+
+//   $('.carousel').flickity().on('settle', function(){
+//     $('.is-selected').toggleClass('is')
+//   });
+
+
+// $('#myCarousel').on( 'settle', function( event, pointer, cellElement, cellIndex ) {
+//     console.log("Here");
+//     if ( !cellElement ) {
+//       return;
+//     }
+//     $( cellElement ).toggleClass('is-expanded');
+//     console.log('HERE');
+//     $carousel.flickity('reposition');
+//   });
+  
+
+
+
+// $('.carousel').on( 'settle.flickity', function( event, index, cellElement, cellIndex) {
+    
+//     console.log( 'Flickity settled at ' + index );
+//     //console.log(cellElement);
+//     if( !cellElement) {
+//         return ;
+//     }
+//     //console.log(cellElement);
+//     $(cellElement).toggleClass('is-expanded');
+//     ('.carousel').flickity('reposition');
+
+//   });
+
+
+  // external js: flickity.pkgd.js
+
+// var $carousel = $('.carousel').flickity();
+
+// $carousel.on( 'settle', function( event, pointer, cellElement, cellIndex ) {
+//   console.log(cellElement);
+//     if ( !cellElement ) {
+//     return;
+//   }
+//   $( cellElement ).toggleClass('is-expanded');
+//   $carousel.flickity('reposition');
+// });
+
+
+$('.carousel').on( 'settle.flickity', function( event, index ) {
+    //console.log(event);
+    console.log(index);
+    
+    //if is selected expand
+    //otherwise not-expand class
+
+    
+    //$(".carousel-cell").addClass('active');
+    // console.log($(this).siblings());
+    // $('.carousel-cell').toggleClass('not-expand');
+    //$("#" + index).toggleClass('is-expanded');
+    // var newIndex = index - 1;
+    // $("#"+ index).toggleClass('is-expanded');
+    // console.log( 'Flickity settled at ' + index );
+    // $("#"+ newIndex).toggleClass('not-expand');
+    // $('.carousel').flickity('reposition');
+    // console.log(index-1);
+    // $("#" + index - 1 ).toggleClass('not-expand');
+  });
+
+
+
+
+  
+
+// if($('.carousel-cell').attr("aria-selected") == true){
+//     console.log("here");
+// }
+// console.log($('.is-selected'));
+
+// $('.is-selected').toggleClass('is-expanded');
+console.log($('.carousel-cell').attr("aria-selected"));
+// $(".is-selected").toggleClass('is-expanded');
+
+    // $(".carousel-cell").on("dragEnd", function(){
+    //     $(this).toggleClass('is-expanded');
+    // })
+    
+    //if on the current element
+    //expand (this) cell
+
+
+    
+    
 }); 
