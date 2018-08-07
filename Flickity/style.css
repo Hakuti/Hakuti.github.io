@@ -9,7 +9,7 @@ html { overflow-y: scroll; }
 
 .carousel {
   /* background: #FDFAFA; */
-  height: 520px;
+  height: 540px;
   padding: 10px;
   /* margin: 0px 25px 25px 25px; */
   width: 100%;
@@ -18,7 +18,7 @@ html { overflow-y: scroll; }
 
 .carousel-cell {
   width: 95%;
-  height: 400px;
+  height: 500px;
   margin-right: 20px;
   margin-top: 5px;
   margin-bottom: 70px;
