@@ -1,0 +1,126 @@
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* prevent vertical scroll bar glitch */
+html { overflow-y: scroll; }
+
+.carousel {
+  /* background: #FDFAFA; */
+  height: 520px;
+  padding: 10px;
+  margin: 0px 25px 25px 25px;
+  
+}
+
+.carousel-cell {
+  width: 95%;
+  height: 400px;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 70px;
+  
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  z-index: 100;
+  box-shadow: 1px 1px rgba(0, 0, 255, .2), 0em 0 .4em rgba(0, 0, 255, .2);
+  background-image: url("dog.jpg");
+  background-repeat: no-repeat;
+  /* box-shadow: 10px 5px 5px; */
+}
+
+/* cell number */
+/* .carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+} */
+
+.nav a {
+    
+}
+.flickity-button {
+    display:none;
+}
+
+.btn {
+    position: relative;
+    /* top: 410px;
+    left: 62.5px; */
+    top: 105%;
+    left: 20%;
+}
+
+ #heart {
+    position: relative;
+    /* top: 410px;
+    left: 62.5px; */
+    height: 13%;
+    width: 11%;
+    /* top: 100%;
+    left: 30%; */
+    margin-right: 30px;
+}
+
+#inner-cell{
+    position: relative;
+    margin-top: 8px;
+    top: 100%;
+    right: 5%;
+
+    
+}
+
+.col-12 {
+text-align: center;
+/* background: #FDFAFA; */
+
+}
+.col-12 img {
+    margin-top: 10px;
+    display: inline;
+    align-content: center;
+    height: 40px;
+    width: 40px;
+}
+
+/* #x {
+    position: relative;
+    height: 10%;
+    width: 10%;
+    /* top: 100%;
+    left: 30%; 
+} */
+
+.flickity-page-dots {
+    bottom: 0px;
+    display:none;
+  }
+
+  #approve {
+      position: relative;
+      height: 110%;
+      width: 100%;
+      margin-left: -20px;
+      /* margin-right: 0px; */
+      /* margin-right: 10px; */
+
+  }
+
+  .btn {
+      
+      width: 70%;
+      height: 12%;
+  }
+  .btn p {
+      position: relative;
+      display: inline;
+      left: 30px;
+  }
+
